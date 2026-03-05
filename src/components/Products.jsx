@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import { toast } from "react-toastify";
 const Products = () => {
   const Id = 0;
   const [products, setProduct] = useState([]);
