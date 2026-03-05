@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 const Products = () => {
-  const Id = 0;
   const [products, setProduct] = useState([]);
   useEffect(() => {
     axios.get("https://dummyjson.com/products").then((data) => {
