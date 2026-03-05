@@ -3,7 +3,6 @@ import axios from "axios";
 const Products = () => {
   const Id = 0;
   const [products, setProduct] = useState([]);
-  const [bool, setBool] = useState(false);
   useEffect(() => {
     axios.get("https://dummyjson.com/products").then((data) => {
       setProduct(data?.data.products);
